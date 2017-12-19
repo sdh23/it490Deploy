@@ -1,2 +1,2 @@
 
-Error: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\n
+Error: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: could not find driver\n\nError: SQLSTATE[HY000] [1049] Unknown database 'deploy'\n\n

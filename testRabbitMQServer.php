@@ -54,7 +54,7 @@ function deployPackage($request)
 	$packageNum -= 1;
 	$package = $request['packageName'] . $packageNum;
 
-	$scpPackage = 'sshpass -p ' . $targetPass . ' scp -r /home/sam/rabbitmqphp_example/Deploy_Server/packages/' . $package . '.tar.gz ' . $targetMachine['username'] . '@' . $targetIp . ':/home/' . $targetMachine['username'] . '/packages';
+	$scpPackage = 'sshpass -p ' . $targetPass . ' scp -r /home/kevv/git/it490Deploy/packages/' . $package . '.tar.gz ' . $targetMachine['username'] . '@' . $targetIp . ':/home/' . $targetMachine['username'] . '/packages';
 	
 	shell_exec($scpPackage);
 	
@@ -104,7 +104,7 @@ function rollbackPackage($request)
         $packageNum = $packageNum - 2;
         $package = $request['packageName'] . $packageNum;
         
-        $scpPackage = 'sshpass -p ' . $targetPass . ' scp -r /home/sam/rabbitmqphp_example/Deploy_Server/packages/' . $package . '.tar.gz ' . $targetMachine['username'] . '@' . $targetIp . ':/home/' . $targetMachine['username'] . '/packages/';
+        $scpPackage = 'sshpass -p ' . $targetPass . ' scp -r /home/kevv/git/it490Deploy/packages/' . $package . '.tar.gz ' . $targetMachine['username'] . '@' . $targetIp . ':/home/' . $targetMachine['username'] . '/packages/';
 	shell_exec($scpPackage);
 	
 
